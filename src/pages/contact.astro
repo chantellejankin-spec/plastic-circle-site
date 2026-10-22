@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -8,7 +9,7 @@ import Layout from '../layouts/Layout.astro';
 >
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow reveal"><a href="/" style="color:inherit;">&larr; Plastic Circle West Africa</a></p>
+      <p class="eyebrow reveal"><a href={base} style="color:inherit;">&larr; Plastic Circle West Africa</a></p>
       <h1 class="reveal">Get in Touch</h1>
       <p class="lede reveal">
         For partnership, funding or media enquiries about Plastic Circle West

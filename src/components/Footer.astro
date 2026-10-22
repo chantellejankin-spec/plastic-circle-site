@@ -1,5 +1,6 @@
 ---
 const year = new Date().getFullYear();
+const base = import.meta.env.BASE_URL;
 ---
 
 <footer class="site-footer">
@@ -9,10 +10,10 @@ const year = new Date().getFullYear();
       <p class="parent">An Ayara Foundation Switzerland programme</p>
     </div>
     <nav>
-      <a href="/sierra-leone">Sierra Leone</a>
-      <a href="/gambia">The Gambia</a>
-      <a href="/#positions">Positions</a>
-      <a href="/contact">Contact</a>
+      <a href={`${base}sierra-leone`}>Sierra Leone</a>
+      <a href={`${base}gambia`}>The Gambia</a>
+      <a href={`${base}#positions`}>Positions</a>
+      <a href={`${base}contact`}>Contact</a>
     </nav>
     <div class="footer-address">
       <p>Ayara Foundation Switzerland</p>

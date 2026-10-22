@@ -1,14 +1,15 @@
 ---
+const base = import.meta.env.BASE_URL;
 const navItems = [
-  { href: '/sierra-leone', label: 'Sierra Leone' },
-  { href: '/gambia', label: 'The Gambia' },
-  { href: '/#positions', label: 'Positions' },
+  { href: `${base}sierra-leone`, label: 'Sierra Leone' },
+  { href: `${base}gambia`, label: 'The Gambia' },
+  { href: `${base}#positions`, label: 'Positions' },
 ];
 ---
 
 <header class="site-header">
   <div class="wrap bar">
-    <a class="logo" href="/">
+    <a class="logo" href={base}>
       <span class="logo-line1">PLASTIC CIRCLE</span>
       <span class="logo-line2">WEST AFRICA</span>
     </a>
@@ -24,7 +25,7 @@ const navItems = [
           <li><a href={item.href}>{item.label}</a></li>
         ))}
       </ul>
-      <a class="pill-btn connect" href="/contact">Contact Us</a>
+      <a class="pill-btn connect" href={`${base}contact`}>Contact Us</a>
     </nav>
   </div>
 </header>

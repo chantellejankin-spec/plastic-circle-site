@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+const base = import.meta.env.BASE_URL;
 ---
 
 <Layout
@@ -17,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
       <div class="hero-cta reveal">
         <a class="pill-btn" href="#platforms">See the Country Platforms</a>
-        <a class="pill-btn outline on-dark" href="/contact">Partner With Us</a>
+        <a class="pill-btn outline on-dark" href={`${base}contact`}>Partner With Us</a>
       </div>
 
       <div class="stat-bar">
@@ -112,7 +113,7 @@ import Layout from '../layouts/Layout.astro';
       </p>
     </div>
     <div class="card-grid cols-2 reveal">
-      <a class="platform-card" href="/sierra-leone" style="color:inherit;">
+      <a class="platform-card" href={`${base}sierra-leone`} style="color:inherit;">
         <div class="platform-head">
           <span class="country">Sierra Leone</span>
           <h3 style="margin:0;">DecoPlastic</h3>
@@ -125,7 +126,7 @@ import Layout from '../layouts/Layout.astro';
           <span class="text-link">Explore Sierra Leone &rarr;</span>
         </div>
       </a>
-      <a class="platform-card" href="/gambia" style="color:inherit;">
+      <a class="platform-card" href={`${base}gambia`} style="color:inherit;">
         <div class="platform-head">
           <span class="country">The Gambia</span>
           <h3 style="margin:0;">Plastic Loop</h3>
@@ -257,7 +258,7 @@ import Layout from '../layouts/Layout.astro';
           <p>
             Local implementation lead for Plastic Loop, The Gambia:
             operational coordination, community engagement and stakeholder
-            mobilisation. <a class="text-link" href="/gambia">More &rarr;</a>
+            mobilisation. <a class="text-link" href={`${base}gambia`}>More &rarr;</a>
           </p>
         </div>
         <div class="card">
@@ -265,7 +266,7 @@ import Layout from '../layouts/Layout.astro';
           <p>
             Local implementation lead for DecoPlastic, Sierra Leone:
             operational coordination, local stakeholder engagement and
-            sourcing relationships. <a class="text-link" href="/sierra-leone">More &rarr;</a>
+            sourcing relationships. <a class="text-link" href={`${base}sierra-leone`}>More &rarr;</a>
           </p>
         </div>
         <div class="card">
@@ -337,7 +338,7 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
           <div class="job-apply">
-            <a class="pill-btn outline" href="/documents/plastic-loop-gambia-workshop-fabrication-lead.pdf" target="_blank" rel="noopener">Download Job PDF</a>
+            <a class="pill-btn outline" href={`${base}documents/plastic-loop-gambia-workshop-fabrication-lead.pdf`} target="_blank" rel="noopener">Download Job PDF</a>
           </div>
         </div>
       </div>
@@ -353,7 +354,7 @@ import Layout from '../layouts/Layout.astro';
       partners for one or both country platforms, including local
       implementation, technical and distribution partnerships.
     </p>
-    <a class="pill-btn outline on-dark" href="/contact">Get in Touch</a>
+    <a class="pill-btn outline on-dark" href={`${base}contact`}>Get in Touch</a>
   </section>
 </Layout>
 
