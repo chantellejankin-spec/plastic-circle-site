@@ -265,6 +265,49 @@ a {
   margin-bottom: clamp(2rem, 5vw, 3rem);
 }
 
+/* Icon + heading row inside a card */
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+.card-head h3 {
+  margin: 0;
+}
+
+/* General icon + fact row, used on the homepage hero instead of a data table */
+.fact-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: clamp(2rem, 5vw, 3rem);
+}
+
+.fact-row .fact {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.fact-row .fact-title {
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 0.2em;
+}
+
+.fact-row .fact-note {
+  font-size: 0.88rem;
+  color: rgba(253, 253, 251, 0.85);
+}
+
+@media (max-width: 760px) {
+  .fact-row {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Country platform cards on the overview page */
 .platform-card {
   display: flex;

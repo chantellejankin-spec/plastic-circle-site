@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -12,9 +13,9 @@ const base = import.meta.env.BASE_URL;
       <p class="eyebrow reveal"><a href={base} style="color:inherit;">&larr; Plastic Circle West Africa</a></p>
       <h1 class="reveal">DecoPlastic, Sierra Leone</h1>
       <p class="lede reveal">
-        A locally rooted circular economy model that converts unmanaged
-        plastic waste in Sierra Leone into marketable products, jobs and
-        longer-term local productive capacity.
+        A locally rooted circular economy platform that turns plastic waste
+        in Sierra Leone into marketable products, local jobs and longer-term
+        production capacity.
       </p>
 
       <div class="stat-bar">
@@ -43,22 +44,15 @@ const base = import.meta.env.BASE_URL;
         <p class="eyebrow">Local context</p>
         <h2>Why Sierra Leone, why now</h2>
         <p>
-          Sierra Leone generates an estimated 130,000 tonnes of plastic waste
-          a year, while domestic recycling capacity remains far below
-          national need. In Freetown, more than half of households are not
-          served by formal waste collection, and blocked drains intensify
-          flooding and public-health risk. A peer-reviewed beach-litter study
-          documented plastic as the dominant litter category on Sierra
-          Leone's coastline, accounting for around 70% of litter by count,
-          led by plastic bottles, water sachets, and caps and lids (Lavelle
-          et al., 2024).
-        </p>
-        <p>
-          At the same time, Sierra Leone has adopted a National Plastic and
-          Plastic Waste Policy, and Freetown is one of five cities in UNDP
-          and GEF's Shifting to Zero Waste Against Pollution (SWAP)
-          programme, giving DecoPlastic a direct policy anchor to align
-          with.
+          Sierra Leone generates an estimated 130,000 tonnes of plastic
+          waste a year, while domestic recycling capacity stays far below
+          national need. In Freetown, more than half of households go
+          without formal waste collection, and blocked drains intensify
+          flooding and public health risk. A peer-reviewed beach-litter
+          study documented plastic as the dominant litter category on
+          Sierra Leone's coastline, making up around 70% of litter by
+          count, led by plastic bottles, water sachets, and caps and lids
+          (Lavelle et al., 2024).
         </p>
       </div>
     </div>
@@ -68,114 +62,67 @@ const base = import.meta.env.BASE_URL;
     <p class="eyebrow" style="color: var(--blush);">Lead implementation partner</p>
     <h2>Sierra Leone Engineering Solutions</h2>
     <p style="max-width: 680px;">
-      Sierra Leone Engineering Solutions (C.S.O.), led by <strong>Ishmael Faye</strong>,
-      is the local implementation lead for DecoPlastic: operational
-      coordination, local stakeholder engagement, community mobilisation and
-      sourcing relationships on the ground in Sierra Leone. It works
-      alongside Ayara Foundation Switzerland, which leads strategy,
-      technical direction, governance, fundraising and international
-      partnerships, and Aquitas (Switzerland) Ltd., which provides
-      independent monitoring, evaluation, accountability and learning (MEAL).
+      Sierra Leone Engineering Solutions (C.S.O.), led by <strong>Ishmael
+      Faye</strong>, is the local implementation lead for DecoPlastic.
+      The team handles operational coordination, local stakeholder
+      engagement, community mobilisation and sourcing relationships on the
+      ground in Sierra Leone.
     </p>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="section-head reveal">
-        <p class="eyebrow">Approach</p>
-        <h2>From collection to local manufacturing</h2>
+        <p class="eyebrow">What makes DecoPlastic local</p>
+        <h2>Built around Sierra Leone's own conditions</h2>
       </div>
       <div class="card-grid reveal">
         <div class="card">
-          <h3>Recover</h3>
+          <div class="card-head">
+            <Icon name="shield" />
+            <h3>Aligned with national policy</h3>
+          </div>
           <p>
-            Neighbourhood-based collectors, local aggregators, women's and
-            youth groups and institutional drop-off partners such as
-            schools, hospitality actors and businesses feed a structured
-            sourcing model, organising rather than displacing existing
-            informal recovery.
+            Sierra Leone has adopted a National Plastic and Plastic Waste
+            Policy, and Freetown is one of five cities in UNDP and GEF's
+            Shifting to Zero Waste Against Pollution (SWAP) programme.
+            Sierra Leone's national SWAP component, led by the EPA and
+            running 2027 to 2031, gives DecoPlastic a direct policy anchor.
           </p>
         </div>
         <div class="card">
-          <h3>Prepare</h3>
+          <div class="card-head">
+            <Icon name="filter" />
+            <h3>Careful sorting, safer production</h3>
+          </div>
           <p>
-            Plastic is sorted by resin type, colour and quality against a
-            resin-based acceptance matrix, cleaned and prepared for
-            production, with roughly 60&ndash;75% of collected material
-            expected to enter productive use.
+            A resin-based acceptance matrix guides what enters production.
+            HDPE, LDPE and PP are accepted and processed, PET is kept
+            separate for external recovery, and PVC, PS and mixed plastics
+            are excluded for quality and safety reasons.
           </p>
         </div>
         <div class="card">
-          <h3>Make</h3>
+          <div class="card-head">
+            <Icon name="bolt" />
+            <h3>Energy built for local conditions</h3>
+          </div>
           <p>
-            Technology transferred through the ECOLLABO8 partnership &mdash;
-            moulded products, sheet press, flow moulding extrusion and
-            extrusion press &mdash; converts recovered plastic into
-            furniture, outdoor products, surface materials, household items
-            and bespoke solutions for schools, hospitality and offices.
+            Around 62% of firms in Sierra Leone own or share a generator to
+            cope with frequent power outages. DecoPlastic runs on a hybrid
+            solar, battery and generator system from day one, keeping
+            production and equipment protected.
           </p>
-        </div>
-        <div class="card">
-          <h3>Sell &amp; reinvest</h3>
-          <p>
-            Revenue comes from product sales, bespoke institutional orders,
-            and collection and recovery service contracts, with surpluses
-            reinvested into jobs, maintenance and gradual expansion.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Operational resilience</p>
-        <h2>Built for Sierra Leone's conditions</h2>
-        <p>
-          Sierra Leone's business environment remains constrained by
-          frequent power outages, with around 62% of firms owning or sharing
-          a generator. DecoPlastic integrates a hybrid solar, battery and
-          generator energy system from the outset, protecting production
-          continuity and equipment rather than treating energy resilience as
-          an optional add-on.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Partners</p>
-        <h2>Delivered together</h2>
-      </div>
-      <div class="card-grid reveal">
-        <div class="card">
-          <h3>Ayara Foundation Switzerland</h3>
-          <p>Programme lead: strategy, technical direction, governance, fundraising and international partnerships.</p>
-        </div>
-        <div class="card">
-          <h3>Sierra Leone Engineering Solutions</h3>
-          <p>Local implementation lead: community engagement, operational coordination and sourcing relationships, led by Ishmael Faye.</p>
-        </div>
-        <div class="card">
-          <h3>ECOLLABO8</h3>
-          <p>Technology partner: recycling machinery, technical onboarding, production know-how and training.</p>
-        </div>
-        <div class="card">
-          <h3>Aquitas (Switzerland)</h3>
-          <p>Independent MEAL and evidence partner: baselines, indicators, data quality and outcome monitoring.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section panel wine" style="margin: 0 clamp(1.25rem, 4vw, 2.5rem) clamp(3rem, 8vw, 6rem); width:auto; padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 4vw, 3rem); text-align:center;">
-    <h2>Support DecoPlastic Sierra Leone</h2>
+    <h2>Want to know more about DecoPlastic</h2>
     <p style="max-width:560px; margin: 0 auto 1.5em;">
-      Ayara Foundation Switzerland is seeking grant, co-funding and strategic
-      partners for DecoPlastic, including full-site and component financing.
+      Get in touch to learn more about DecoPlastic, Sierra Leone Engineering
+      Solutions, or the wider Plastic Circle West Africa programme.
     </p>
     <a class="pill-btn outline on-dark" href={`${base}contact`}>Get in Touch</a>
   </section>

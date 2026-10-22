@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -12,26 +13,26 @@ const base = import.meta.env.BASE_URL;
       <p class="eyebrow reveal"><a href={base} style="color:inherit;">&larr; Plastic Circle West Africa</a></p>
       <h1 class="reveal">Plastic Loop, The Gambia</h1>
       <p class="lede reveal">
-        A locally rooted circular economy model that converts unmanaged
-        plastic waste in the Greater Banjul Area into marketable products,
-        jobs and longer-term local productive capacity.
+        A locally rooted circular economy platform that turns plastic
+        waste in the Greater Banjul Area into marketable products, local
+        jobs and longer-term production capacity.
       </p>
 
       <div class="stat-bar">
         <div class="stat">
           <p class="stat-label">Plastic waste generated</p>
           <p class="stat-value">~23,000 t / year</p>
-          <p class="stat-note">about 8.5 kg per person &middot; plastic is ~9% of all municipal solid waste (UNDP, 2023)</p>
+          <p class="stat-note">about 8.5 kg per person; plastic is ~9% of all municipal solid waste (UNDP, 2023)</p>
         </div>
         <div class="stat">
           <p class="stat-label">Unmanaged plastic</p>
           <p class="stat-value">~75%</p>
-          <p class="stat-note">leaks into the environment, rivers and the Atlantic Ocean; could rise 42% by 2033 without intervention (Common Seas, 2024)</p>
+          <p class="stat-note">leaks into the environment, rivers and the Atlantic Ocean (Common Seas, 2024)</p>
         </div>
         <div class="stat">
           <p class="stat-label">Greater Banjul Area</p>
           <p class="stat-value">~1 million people</p>
-          <p class="stat-note">the country's administrative, commercial and cultural hub, growing at ~4.2% a year</p>
+          <p class="stat-note">the country's administrative, commercial and cultural hub</p>
         </div>
       </div>
     </div>
@@ -43,20 +44,13 @@ const base = import.meta.env.BASE_URL;
         <p class="eyebrow">Local context</p>
         <h2>Why The Gambia, why now</h2>
         <p>
-          The Gambia is Africa's smallest mainland country, ranking 174th out
-          of 193 on the Human Development Index, with a national poverty
-          rate of around 48% (World Bank, 2022) and roughly 84% of employed
-          youth in informal work (GBoS, 2023). Most waste is disposed of at
-          informal dumpsites or burned in backyards; uncollected waste
-          pollutes the River Gambia and its mangrove forests on its way to
-          the Atlantic.
-        </p>
-        <p>
-          The Gambia is also one of the few countries whose climate
-          commitments are recognised as aligned with the Paris Agreement's
-          1.5&deg;C goal, and a circular economy network has already begun to
-          take shape in the Greater Banjul Area, creating momentum for
-          sustainable resource management that Plastic Loop builds on.
+          The Gambia is Africa's smallest mainland country, ranking 174th
+          out of 193 on the Human Development Index, with a national
+          poverty rate of around 48% (World Bank, 2022) and roughly 84% of
+          employed youth in informal work (GBoS, 2023). Most waste goes to
+          informal dumpsites or gets burned in backyards. Uncollected
+          waste pollutes the River Gambia and its mangrove forests on its
+          way to the Atlantic.
         </p>
       </div>
     </div>
@@ -67,114 +61,64 @@ const base = import.meta.env.BASE_URL;
     <h2>Hustle for Humanity Gambia</h2>
     <p style="max-width: 680px;">
       Hustle for Humanity Gambia (HFH-G), led by <strong>Musa Jallow</strong>,
-      is the local implementation lead for Plastic Loop: day-to-day
-      coordination, monitoring, community engagement, stakeholder
-      mobilisation and practical implementation on the ground in the Greater
-      Banjul Area. It works alongside Ayara Foundation Switzerland, which
-      leads strategy, fundraising and international partnerships, and
-      Aquitas (Switzerland) Ltd., which provides monitoring, evaluation,
-      accountability and learning (MEAL) and evidence support.
+      is the local implementation lead for Plastic Loop. The team handles
+      day-to-day coordination, monitoring, community engagement and
+      stakeholder mobilisation on the ground in the Greater Banjul Area.
     </p>
   </section>
 
   <section class="section">
     <div class="wrap">
       <div class="section-head reveal">
-        <p class="eyebrow">Approach</p>
-        <h2>From collection to local manufacturing</h2>
+        <p class="eyebrow">What makes Plastic Loop local</p>
+        <h2>Built around The Gambia's own conditions</h2>
       </div>
       <div class="card-grid reveal">
         <div class="card">
-          <h3>Recover</h3>
+          <div class="card-head">
+            <Icon name="pin" />
+            <h3>A community collection network</h3>
+          </div>
           <p>
-            A network of clearly labelled plastic collection points at
-            schools, markets and community centres, combined with regular
-            community collection drives run with schools, youth groups and
-            women's associations, feeds a structured sourcing model.
+            Clearly labelled plastic collection points sit at schools,
+            markets and community centres, backed by regular collection
+            drives run with schools, youth groups and women's
+            associations.
           </p>
         </div>
         <div class="card">
-          <h3>Prepare</h3>
+          <div class="card-head">
+            <Icon name="wave" />
+            <h3>Energy built for the coast</h3>
+          </div>
           <p>
-            Plastic is sorted by resin type, colour and quality against a
-            resin-based acceptance matrix, cleaned and prepared for
-            production, with roughly 60&ndash;75% of collected material
-            expected to enter productive use.
+            The hybrid solar, battery and generator system is calibrated
+            to the Gambian coast's seasonal solar profile, with separate
+            dry-season and wet-season planning so that production
+            continuity does not depend on grid power alone.
           </p>
         </div>
         <div class="card">
-          <h3>Make</h3>
+          <div class="card-head">
+            <Icon name="users" />
+            <h3>Designed with local businesses</h3>
+          </div>
           <p>
-            Technology transferred through the ECOLLABO8 partnership &mdash;
-            moulded products, sheet press, flow moulding extrusion and
-            extrusion press &mdash; converts recovered plastic into
-            furniture, outdoor products, surface materials, household items
-            and bespoke solutions for schools, hospitality and offices.
+            Product development happens together with local furniture
+            makers, construction firms, hospitality operators and
+            retailers, who help shape designs and also serve as
+            distribution channels.
           </p>
-        </div>
-        <div class="card">
-          <h3>Sell &amp; reinvest</h3>
-          <p>
-            Product development happens in collaboration with local
-            furniture makers, construction firms, hospitality operators and
-            retailers, who also act as market and distribution channels, with
-            surpluses reinvested into jobs and growth.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Operational resilience</p>
-        <h2>Built for the Gambian coast</h2>
-        <p>
-          Gambian businesses continue to experience frequent power outages,
-          with many relying on generators to keep operating. Plastic Loop
-          integrates a hybrid solar, battery and generator energy system
-          calibrated to the Gambian coast's seasonal solar profile, with
-          separate dry- and wet-season planning so that production
-          continuity does not depend on grid power alone.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <p class="eyebrow">Partners</p>
-        <h2>Delivered together</h2>
-      </div>
-      <div class="card-grid reveal">
-        <div class="card">
-          <h3>Ayara Foundation Switzerland</h3>
-          <p>Programme lead: strategy, technical direction, governance, fundraising and international partnerships.</p>
-        </div>
-        <div class="card">
-          <h3>Hustle for Humanity Gambia</h3>
-          <p>Local implementation lead: community engagement, day-to-day coordination and stakeholder mobilisation, led by Musa Jallow.</p>
-        </div>
-        <div class="card">
-          <h3>ECOLLABO8</h3>
-          <p>Technology partner: recycling machinery, technical onboarding, production know-how and training.</p>
-        </div>
-        <div class="card">
-          <h3>Aquitas (Switzerland)</h3>
-          <p>MEAL and evidence partner: baselines, indicators, data quality and outcome monitoring.</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="section panel wine" style="margin: 0 clamp(1.25rem, 4vw, 2.5rem) clamp(3rem, 8vw, 6rem); width:auto; padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 4vw, 3rem); text-align:center;">
-    <h2>Support Plastic Loop Gambia</h2>
+    <h2>Want to know more about Plastic Loop</h2>
     <p style="max-width:560px; margin: 0 auto 1.5em;">
-      Ayara Foundation Switzerland is seeking grant, co-funding and strategic
-      partners for Plastic Loop, including full-site and component
-      financing.
+      Get in touch to learn more about Plastic Loop, Hustle for Humanity
+      Gambia, or the wider Plastic Circle West Africa programme.
     </p>
     <a class="pill-btn outline on-dark" href={`${base}contact`}>Get in Touch</a>
   </section>
