@@ -1,0 +1,77 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="brand">Plastic Circle West Africa</p>
+      <p class="parent">An Ayara Foundation Switzerland programme</p>
+    </div>
+    <nav>
+      <a href="/sierra-leone">Sierra Leone</a>
+      <a href="/gambia">The Gambia</a>
+      <a href="/#positions">Positions</a>
+      <a href="/contact">Contact</a>
+    </nav>
+    <div class="footer-address">
+      <p>Ayara Foundation Switzerland</p>
+      <p>Gerechtigkeitsgasse 17, 8001 Zurich</p>
+      <p><a href="https://www.ayarafoundation.com">www.ayarafoundation.com</a></p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="copy">&copy; {year} Ayara Foundation Switzerland</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    border-top: 1px solid var(--line);
+    padding: 2.5rem 0 1.5rem;
+    font-size: 0.85rem;
+    background: var(--blush-pale);
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+  }
+
+  .brand {
+    margin: 0 0 0.2em;
+    font-weight: 800;
+    color: var(--wine);
+  }
+
+  .parent {
+    margin: 0;
+    color: var(--ink-soft);
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    font-weight: 700;
+  }
+
+  .footer-address p {
+    margin: 0 0 0.3em;
+  }
+
+  .footer-address a {
+    color: var(--wine);
+    font-weight: 700;
+  }
+
+  .copy {
+    margin: 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+</style>
