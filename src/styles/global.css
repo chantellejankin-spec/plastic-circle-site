@@ -101,6 +101,17 @@ a {
   color: var(--paper);
 }
 
+.pill-btn.solid-on-dark {
+  background: var(--blush-pale);
+  border-color: var(--blush-pale);
+  color: var(--wine-dark);
+}
+
+.pill-btn.solid-on-dark:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
 .text-link {
   display: inline-block;
   font-weight: 700;
